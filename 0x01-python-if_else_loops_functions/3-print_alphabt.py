@@ -1,4 +1,4 @@
 #!/usr/bin/python3
-for az in range(97, 123):
-    if az != 101 and az != 113:
-        print("{:c}".format(az), end="")
+for a2z in range(97, 123):
+    if a2z != 101 and a2z != 113:
+        print("{:c}".format(a2z), end="")
