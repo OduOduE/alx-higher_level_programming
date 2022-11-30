@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-for dig1 in range(0, 9):
-    for dig2 in range(1, 10):
-        if dig1 < dig2:
-            print(dig1, end="")
-            print(dig2, end="\n" if dig1 == 8 and dig2 == 9 else ", ")
+number = 0
+while number <= 89:
+    if number % 10 == 0:
+        number += 1 + number // 10
+    print("{:02d}".format(number), end="\n" if number == 89 else ", ")
+    number += 1
