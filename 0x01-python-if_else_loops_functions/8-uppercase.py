@@ -1,4 +1,4 @@
-#!/usr/bin/pythoyn3
+#!/usr/bin/python3
 def uppercase(str):
     tr = ""
     for i in str:
