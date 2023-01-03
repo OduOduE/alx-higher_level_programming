@@ -5,7 +5,7 @@
 class Rectangle:
     """Establishing a class rectangle"""
 
-    def ___init__(self, width=0, height=0):
+    def __init__(self, width=0, height=0):
         """Instantiation of the class args.
 
         args:
