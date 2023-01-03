@@ -71,7 +71,7 @@ class Rectangle:
         to_print = ''
         for col in range(self.height):
             for row in range(self.width):
-                to_print += '#'
+                to_print += str(self.print_symbol)
             if col != self.height - 1:
                 to_print += '\n'
         return to_print
