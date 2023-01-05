@@ -12,7 +12,7 @@ Attributes:
     board (list): A list of lists representing the chessboard.
     solutions (list): A list of lists containing solutions,
     represented in the format [[r, c], [r, c], [r, c], [r, c]]
-    where r and c are row and columns respectectively, where a 
+    where r and c are row and columns respectectively, where a
     queen must be placed on the chessboard.
 """
 import sys
@@ -47,7 +47,7 @@ def get_solution(board):
 def x_out(board, row, col):
     """cancel out spots on the chessboard.
 
-    All spots where non-attacking queens can no longer be 
+    All spots where non-attacking queens can no longer be
     played are X-ed out.
 
     Args:
@@ -118,8 +118,8 @@ def recursive_solve(board, row, queens, solution):
             tmp_board[row][c] = "Q"
             x_out(tmp_board, row, c)
             solutions = recursive_solve(tmp_board, row + 1,
-                                    queens + 1, solutions)
-    
+                                        queens + 1, solutions)
+
     return solutions
 
 
