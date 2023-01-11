@@ -5,7 +5,7 @@
 class Student:
     """ defines a student."""
 
-    def _init__(self, first_name, last_name, age):
+    def __init__(self, first_name, last_name, age):
         """Instantiation with;
 
         Args:
