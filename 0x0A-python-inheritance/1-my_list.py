@@ -2,7 +2,7 @@
 """a class MyList that inherits from list"""
 
 
-class Mylist(list):
+class MyList(list):
     """Represents a class that inherits from list"""
     """
     def __init__(self):
