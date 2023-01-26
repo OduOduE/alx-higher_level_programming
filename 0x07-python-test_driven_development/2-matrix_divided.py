@@ -39,5 +39,5 @@ def matrix_divided(matrix, div):
             if not type(num) in (int, float):
                 raise TypeError(errmsg)
 
-    m = [list(map(lambda x: round(x / div, 2), elem)) for elem matrix]
+    m = [list(map(lambda x: round(x / div, 2), elem)) for elem in matrix]
     return (m)
