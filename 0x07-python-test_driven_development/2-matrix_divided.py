@@ -26,7 +26,8 @@ def matrix_divided(matrix, div):
     if div == 0:
         raise ZeroDivisionError("division by zero")
 
-    errmsg1 = "Each row must have the same size"
+    errmsg1 = "Each row of the matrix must have the same size"
+
     for elem in matrix:
         if not elem or not isinstance(elem, list):
             raise TypeError(errmsg)
