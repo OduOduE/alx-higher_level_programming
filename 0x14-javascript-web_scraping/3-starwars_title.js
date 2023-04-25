@@ -11,6 +11,6 @@ request(API_URL + episodeNumber, function (err, response, body) {
     const responseJSON = JSON.parse(body);
     console.log(responseJSON.title);
   } else {
-      console.log('Error code: ' + response.statusCode);
+    console.log('Error code: ' + response.statusCode);
   }
 });
